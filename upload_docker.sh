@@ -6,10 +6,13 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
+dockerpath="zeighnab/app"
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker tag app:latest zeighnab/app:latest
 
 # Step 3:
 # Push image to a docker repository
+docker push zeighnab/app:latest
